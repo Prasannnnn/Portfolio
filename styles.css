@@ -3,18 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-.dark-theme {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-.light-theme {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
 }
 
 .container {
@@ -25,16 +15,11 @@ body {
 
 /* Header Styles */
 header {
-    background: #333;
+    background: #1e1e1e;
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #0779e4 3px solid;
-    transition: background 0.5s;
-}
-
-.dark-theme header {
-    background: #121212;
+    border-bottom: #ff9800 3px solid;
 }
 
 header a {
@@ -69,27 +54,22 @@ header nav {
 }
 
 header .highlight, header .current a {
-    color: #0779e4;
+    color: #ff9800;
     font-weight: bold;
 }
 
 header a:hover {
-    color: #cccccc;
+    color: #ffcc80;
     font-weight: bold;
 }
 
 /* Showcase Styles */
 #showcase {
     min-height: 400px;
-    background: #0779e4;
+    background: #333;
     text-align: center;
     color: #fff;
     padding-top: 100px;
-    transition: background 0.5s;
-}
-
-.dark-theme #showcase {
-    background: #444;
 }
 
 #showcase h1 {
@@ -108,15 +88,16 @@ section {
 
 section h2 {
     margin-top: 0;
+    color: #ff9800; /* Accent color for section headers */
 }
 
 /* Contact Styles */
 #contact a {
-    color: #0779e4;
+    color: #ff9800;
 }
 
 #contact a:hover {
-    color: #0056b3;
+    color: #ffcc80;
 }
 
 /* Footer Styles */
@@ -124,53 +105,6 @@ footer {
     padding: 20px;
     margin-top: 20px;
     color: #fff;
-    background-color: #333;
+    background-color: #1e1e1e;
     text-align: center;
-}
-
-.dark-theme footer {
-    background-color: #121212;
-}
-
-/* Theme Toggle Button */
-.theme-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #0779e4;
-    color: white;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header nav {
-        float: none;
-        text-align: center;
-    }
-
-    header nav ul {
-        padding: 0;
-    }
-
-    header nav ul li {
-        display: block;
-        padding: 10px;
-    }
-
-    .container {
-        width: 90%;
-    }
 }

@@ -20,6 +20,10 @@ header {
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #ff9800 3px solid;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */
 }
 
 header a {
